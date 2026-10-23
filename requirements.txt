@@ -1,0 +1,19 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9
+pydantic>=2.6
+python-dotenv>=1.0
+
+# RAG stack
+langchain-core>=0.3
+langchain-text-splitters>=0.3
+langchain-huggingface>=0.1
+langchain-chroma>=0.1
+chromadb>=0.5
+sentence-transformers>=3.0
+
+# LLM providers: Amazon Bedrock (boto3) is the default for the hackathon; others optional
+boto3>=1.35
+# Optional (the app falls back to an offline mode if neither key is set)
+anthropic>=0.40
+openai>=1.40
